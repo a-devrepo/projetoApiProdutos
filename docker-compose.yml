@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  projeto-produtosapi-db:
+    image: postgres:16
+    container_name: produtosapi-postgres
+    restart: always
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: projetoprodutosapi
+      POSTGRES_USER: produtosuser
+      POSTGRES_PASSWORD: produtospassword
+    volumes:
+      - produtosapi-db-data:/var/lib/postgresql/data
+
+volumes:
+  produtosapi-db-data:
