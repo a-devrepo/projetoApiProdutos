@@ -74,7 +74,7 @@ Roda a aplicação direto no seu computador usando Maven.
 
 ### 2. Executar via Docker
 
-Roda a aplicação direto no seu computador usando Maven.
+Roda a aplicação e o banco de dados em containers isolados.
 
 **Passos:**
 
