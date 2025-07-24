@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import br.com.cotiinformatica.dtos.ProdutoRequest;
 import br.com.cotiinformatica.dtos.ProdutoResponse;
 
-@Service
 public interface ProdutoService {
 
 	ProdutoResponse create(ProdutoRequest request);
