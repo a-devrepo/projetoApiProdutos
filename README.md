@@ -70,3 +70,17 @@ Roda a aplicação direto no seu computador usando Maven.
 
 ```bash
 ./mvnw spring-boot:run
+```
+
+### 2. Executar via Docker
+
+Roda a aplicação direto no seu computador usando Maven.
+
+**Passos:**
+
+ - Certifique-se que o Docker está instalado e rodando.
+ - Na pasta do projeto, onde está o arquivo docker-compose.yml, execute:
+
+```bash
+docker-compose up -d
+```
