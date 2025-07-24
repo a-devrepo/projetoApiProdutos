@@ -19,7 +19,7 @@ public class SwaggerConfiguration {
                 .version("1.0")
                 .description("Documentação da API para gerenciamento de produtos")
                 .contact(new Contact()
-                    .name("Seu Nome ou Equipe")
+                    .name("Alisson Cruz")
                     .url("https://github.com/a-devrepo")
                     .email("adevpr11@gmail.com"))
                 .license(new License()
