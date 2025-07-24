@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   projeto-produtosapi-db:
     image: postgres:16
@@ -13,6 +11,18 @@ services:
       POSTGRES_PASSWORD: produtospassword
     volumes:
       - produtosapi-db-data:/var/lib/postgresql/data
+
+  produtos-api:
+    build: .
+    container_name: produtosapi
+    depends_on:
+      - projeto-produtosapi-db
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://projeto-produtosapi-db:5432/projetoprodutosapi
+      SPRING_DATASOURCE_USERNAME: produtosuser
+      SPRING_DATASOURCE_PASSWORD: produtospassword
 
 volumes:
   produtosapi-db-data:
